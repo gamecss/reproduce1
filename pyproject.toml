@@ -1,0 +1,20 @@
+[project]
+name = "failed_reproduce"
+description = ""
+authors = [
+    {name = "",email = ""},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+write_to = "failed_reproduce/_version.py"
+write_template = "version = \"{}\"\n"
